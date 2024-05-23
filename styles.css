@@ -1,0 +1,57 @@
+body {
+    background-color: #f8f9fa;
+    margin-bottom: 50px;
+}
+
+.card {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.img-thumbnail {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.profile-image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.rotating-circle {
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    width: 150px;
+    height: 150px; 
+    margin-top: -90px;
+    margin-left: -90px;
+    border: 3px dotted #007bff71 ;
+    border-radius: 50%;
+    animation: rotate 10s linear infinite;
+    box-sizing: border-box;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.card-title {
+    font-weight: bold;
+}
+
+.card-text {
+    color: #6c757d;
+}
+
+.list-group-item {
+    border: none;
+    padding-left: 0;
+}
